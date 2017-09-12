@@ -8,7 +8,7 @@ new VanillaCone();
 ```
 
 ## Here are the available utility methods that comes with VinillaCone:
-------
+
 **xhr | xhr([options])**
 
 Performs what is known as AJAX calls to a desired url in either GET or POST methods.
