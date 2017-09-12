@@ -1,3 +1,7 @@
+//VanillaCone 1.0
+//Devin R. Olsen - 2017
+//http://www.devinrolsen.com
+
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -123,36 +127,6 @@ var VanillaCone = function () {
 		key: 'inserAfter',
 		value: function inserAfter(obj, node) {
 			obj.parentNode.insertBefore(node, obj.nextSibling);
-		}
-
-		/*Form utilities*/
-
-	}, {
-		key: 'removeError',
-		value: function removeError(obj) {
-			RX.removeClass(obj, 'error');
-		}
-	}, {
-		key: 'addError',
-		value: function addError(obj) {
-			RX.addClass(obj, 'error');
-		}
-	}, {
-		key: 'addErrorDisplay',
-		value: function addErrorDisplay(obj, parent) {
-			var errorDisplay;
-			if (obj.dataset.errorDisplay && !parent.querySelector('.error-display')) {
-				errorDisplay = document.createElement('span');
-				errorDisplay.className = 'error-display';
-				errorDisplay.innerHTML = obj.dataset.errorDisplay;
-				parent.appendChild(errorDisplay);
-			}
-		}
-	}, {
-		key: 'addDays',
-		value: function addDays(obj, numDays) {
-			obj.setDate(obj.getDate() + numDays);
-			return obj;
 		}
 	}]);
 

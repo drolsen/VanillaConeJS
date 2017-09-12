@@ -1,3 +1,7 @@
+//VanillaCone 1.0
+//Devin R. Olsen - 2017
+//http://www.devinrolsen.com
+
 class VanillaCone {
 	static xhr(options){
 		options = options || {
@@ -107,30 +111,6 @@ class VanillaCone {
 
 	static inserAfter(obj, node){
 		obj.parentNode.insertBefore(node, obj.nextSibling);		
-	}
-
-	/*Form utilities*/
-	static removeError(obj){
-		RX.removeClass(obj, 'error');
-	}
-
-	static addError(obj){
-		RX.addClass(obj, 'error');
-	}
-
-	static addErrorDisplay(obj, parent){
-		var errorDisplay;
-		if(obj.dataset.errorDisplay && !parent.querySelector('.error-display')){
-			errorDisplay = document.createElement('span');
-			errorDisplay.className = 'error-display';
-			errorDisplay.innerHTML = obj.dataset.errorDisplay;
-			parent.appendChild(errorDisplay);
-		}
-	}
-
-	static addDays(obj, numDays){
-		obj.setDate(obj.getDate() + numDays);
-		return obj;
 	}	
 }
 
