@@ -8,7 +8,7 @@ new VanillaCone();
 ```
 
 ## Here are the available utility methods that comes with VinillaCone:
-
+------
 **xhr | xhr([options])**
 
 Performs what is known as AJAX calls to a desired url in either GET or POST methods.
@@ -20,6 +20,8 @@ Performs what is known as AJAX calls to a desired url in either GET or POST meth
 * **success** = callback for successful request 
 * **error** = callback for unsuccessful request
 
+------
+
 **addClass | addClass(DOMElement, string)**
 
 Adds a class to a given element.
@@ -28,6 +30,8 @@ Adds a class to a given element.
 addClass(document.querySelector('#some-elm'), 'new-class-name');
 ```
 
+------
+
 **removeClass | removeClass(DOMElement, string)**
 
 Removes a class from a given element.
@@ -35,6 +39,8 @@ Removes a class from a given element.
 ```javascript
 removeClass(document.querySelector('#some-elm'), 'class-name-to-remove');
 ```
+
+------
 
 **hasClass | hasClass(DOMElement, string)**
 
@@ -45,6 +51,9 @@ if(hasClass(document.querySelector('#some-elm'), 'class-to-search')){
 	...
 }
 ```
+
+------
+
 **wrap | wrap(DOMElement, DOMElement)**
 
 Wraps given element (first param), within another element (second peram).
@@ -52,6 +61,8 @@ Wraps given element (first param), within another element (second peram).
 ```javascript
 wrap(document.querySelector('#element-to-be-wrapped'), document.querySelector('#element-to-wrap-in'));
 ```
+
+------
 
 **parents | parent(DOMElement, string)**
 
@@ -62,6 +73,8 @@ Parent selector string supports all querySelector combinations (class, id, attri
 parents(document.querySelector('#any-element'), '#parent-element-to-search-for');
 ```
 
+------
+
 **remove | remove(DOMelement)**
 
 Removes given element from page.
@@ -70,6 +83,8 @@ Removes given element from page.
 remove(document.querySelector('#any-element'));
 ```
 
+------
+
 **insertAfter | insertAfter(DOMElement, DOMElement)**
 
 Inserts a given element (first param) after any element on the page (second param).
@@ -77,6 +92,8 @@ Inserts a given element (first param) after any element on the page (second para
 ```javascript
 insertAfter(document.querySelector('#element-to-be-moved'), document.querySelector('#element-we-insert-after'));
 ```
+
+------
 
 **serialize | serialize()**
 
